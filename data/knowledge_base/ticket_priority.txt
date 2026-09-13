@@ -1,0 +1,5 @@
+Ticket Priority Classification
+
+Support tickets are classified as Low, Medium, High, or Critical based on customer impact and urgency. Critical priority applies when there is a widespread service outage, a security-related concern, or a complete inability to use a core service. High priority applies when an important feature is unavailable for one customer or a significant business impact is reported. Medium priority covers issues that affect normal use but have a reasonable workaround, while Low priority covers general questions, minor issues, and informational requests.
+
+Priority should be reassessed when new information changes the customer impact or urgency.

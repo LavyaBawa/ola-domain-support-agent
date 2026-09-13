@@ -1,0 +1,2 @@
+During a confirmed service outage, customers should receive clear information about the affected service and known customer impact. Support agents should provide the latest verified status and avoid making unsupported claims about the cause or restoration time. Important changes should be communicated promptly through approved channels
+

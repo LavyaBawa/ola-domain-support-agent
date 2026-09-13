@@ -1,0 +1,2 @@
+Support records should be retained only for the period required by applicable business, legal, and security policies. Customer information should not be retained indefinitely when there is no valid retention requirement. Requests involving deletion or retention of customer data should be handled through the approved privacy process.
+

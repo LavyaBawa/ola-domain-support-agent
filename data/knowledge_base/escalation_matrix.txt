@@ -1,0 +1,5 @@
+Escalation Matrix
+
+Critical incidents must be escalated to the incident management team immediately. High priority tickets should be escalated when the initial SLA is at risk or when the issue requires specialist investigation. Medium and Low priority tickets may be escalated when repeated contact, unresolved impact, or unusual circumstances indicate that normal support handling is insufficient.
+
+The support agent should record the reason for every escalation.

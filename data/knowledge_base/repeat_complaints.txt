@@ -1,0 +1,1 @@
+When a customer reports the same problem repeatedly, the support agent should review previous tickets before asking the customer to provide the same information again. Repeated unresolved complaints should be linked to the existing issue where possible. The issue should be escalated when normal troubleshooting has not resolved the problem

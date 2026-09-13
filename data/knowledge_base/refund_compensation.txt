@@ -1,0 +1,5 @@
+Refund and Compensation
+
+Refund requests should be reviewed against the applicable billing and service policies before approval. Compensation may be considered when a confirmed service failure causes significant customer impact or when a documented policy provides for compensation.
+
+Support agents should not promise a refund or compensation before eligibility has been verified.

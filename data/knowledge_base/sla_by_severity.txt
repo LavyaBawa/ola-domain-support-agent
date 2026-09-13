@@ -1,0 +1,5 @@
+SLA by Severity
+
+Critical tickets should receive an initial response within 1 hour and should be actively worked until service is restored or a mitigation is provided. High priority tickets should receive an initial response within 4 hours. Medium priority tickets should receive an initial response within 8 business hours, while Low priority tickets should receive an initial response within 24 business hours.
+
+SLA targets are service guidelines and may be affected by holidays, outages, or missing information from the customer.
