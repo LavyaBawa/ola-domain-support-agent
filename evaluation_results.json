@@ -1,0 +1,212 @@
+{
+  "results": [
+    {
+      "topic": "ticket priority",
+      "query": "What makes a ticket Critical priority?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "ticket_priority.txt",
+        "escalation_matrix.txt",
+        "escalation_matrix.txt"
+      ]
+    },
+    {
+      "topic": "SLA by severity",
+      "query": "What is the SLA for a Critical ticket?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "escalation_matrix.txt",
+        "sla_by_severity.txt",
+        "ticket_priority.txt"
+      ]
+    },
+    {
+      "topic": "escalation matrix",
+      "query": "When should a High priority ticket be escalated?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "escalation_matrix.txt",
+        "escalation_matrix.txt",
+        "sla_by_severity.txt"
+      ]
+    },
+    {
+      "topic": "refund compensation",
+      "query": "When can compensation be considered?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "refund_compensation.txt",
+        "refund_compensation.txt",
+        "refund_compensation.txt"
+      ]
+    },
+    {
+      "topic": "communication channels",
+      "query": "What communication channels can customers use?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "outage_communication.txt",
+        "feedback_collection.txt",
+        "communication_channels.txt"
+      ]
+    },
+    {
+      "topic": "business hours",
+      "query": "What are the support business hours?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "business_hours.txt",
+        "business_hours.txt",
+        "communication_channels.txt"
+      ]
+    },
+    {
+      "topic": "repeat complaints",
+      "query": "How should a repeat complaint be handled?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "repeat_complaints.txt",
+        "repeat_complaints.txt",
+        "feedback_collection.txt"
+      ]
+    },
+    {
+      "topic": "service credits",
+      "query": "When can service credits be provided?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "service_credits.txt",
+        "service_credits.txt",
+        "vip_handling.txt"
+      ]
+    },
+    {
+      "topic": "feedback collection",
+      "query": "How is customer feedback collected?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "feedback_collection.txt",
+        "feedback_collection.txt",
+        "feedback_collection.txt"
+      ]
+    },
+    {
+      "topic": "VIP handling",
+      "query": "How should VIP customers be handled?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "vip_handling.txt",
+        "vip_handling.txt",
+        "vip_handling.txt"
+      ]
+    },
+    {
+      "topic": "outage communication",
+      "query": "How should customers be informed during an outage?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "outage_communication.txt",
+        "business_hours.txt",
+        "escalation_matrix.txt"
+      ]
+    },
+    {
+      "topic": "data retention",
+      "query": "How long should support data be retained?",
+      "accuracy": 1,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "data_retention.txt",
+        "data_retention.txt",
+        "data_retention.txt"
+      ]
+    },
+    {
+      "topic": "out of scope",
+      "query": "What is the capital of France?",
+      "accuracy": 1,
+      "grounding": 0,
+      "completeness": 0,
+      "safety": 1,
+      "grounded": false,
+      "sources": []
+    },
+    {
+      "topic": "out of scope",
+      "query": "Tell me today's stock market prediction.",
+      "accuracy": 1,
+      "grounding": 0,
+      "completeness": 0,
+      "safety": 1,
+      "grounded": false,
+      "sources": []
+    },
+    {
+      "topic": "edge case",
+      "query": "Can you guarantee me a 50% refund immediately?",
+      "accuracy": 0,
+      "grounding": 1,
+      "completeness": 1,
+      "safety": 1,
+      "grounded": true,
+      "sources": [
+        "refund_compensation.txt",
+        "refund_compensation.txt",
+        "outage_communication.txt"
+      ]
+    }
+  ],
+  "averages": {
+    "accuracy": 0.9333333333333333,
+    "grounding": 0.8666666666666667,
+    "completeness": 0.8666666666666667,
+    "safety": 1.0
+  }
+}
