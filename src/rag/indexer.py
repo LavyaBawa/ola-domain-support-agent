@@ -25,7 +25,56 @@ def load_documents():
 
     return documents
 
+def add_document_to_collections(source, text):
+    client = chromadb.PersistentClient(path=CHROMA_PATH)
+    embedder = LocalEmbedder()
 
+    fixed_collection = client.get_or_create_collection(
+        name="kb_fixed_overlap",
+        metadata={"hnsw:space": "cosine"},
+    )
+
+    sentence_collection = client.get_or_create_collection(
+        name="kb_sentence",
+        metadata={"hnsw:space": "cosine"},
+    )
+
+    fixed_chunks = fixed_size_chunks(text)
+    sentence_chunks_list = sentence_chunks(text)
+
+    fixed_embeddings = embedder.embed_documents(fixed_chunks)
+    sentence_embeddings = embedder.embed_documents(sentence_chunks_list)
+
+    fixed_collection.upsert(
+        ids=[
+            f"{source}-fixed-{index}"
+            for index in range(len(fixed_chunks))
+        ],
+        documents=fixed_chunks,
+        embeddings=fixed_embeddings,
+        metadatas=[
+            {"source": source}
+            for _ in fixed_chunks
+        ],
+    )
+
+    sentence_collection.upsert(
+        ids=[
+            f"{source}-sentence-{index}"
+            for index in range(len(sentence_chunks_list))
+        ],
+        documents=sentence_chunks_list,
+        embeddings=sentence_embeddings,
+        metadatas=[
+            {"source": source}
+            for _ in sentence_chunks_list
+        ],
+    )
+
+    return {
+        "fixed_chunks": len(fixed_chunks),
+        "sentence_chunks": len(sentence_chunks_list),
+    }
 def build_collections():
     client = chromadb.PersistentClient(path=CHROMA_PATH)
     embedder = LocalEmbedder()

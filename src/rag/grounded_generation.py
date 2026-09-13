@@ -33,7 +33,7 @@ class GroundedGenerator:
             "answer": answer,
             "grounded": True,
             "top_similarity": results.get("top_similarity"),
-            "sources": sources,
+            "sources": sources,"context": contexts,
         }
 
 
