@@ -1,3 +1,4 @@
+from src.guardrails.input_guardrails import guard_input
 from crewai import Crew, Process
 
 from src.crew.agents import (
@@ -14,6 +15,7 @@ from src.crew.tasks import (
 
 
 def run_crew(query, record_id):
+    query = guard_input(query)
     crew = Crew(
         agents=[
             retrieval_agent,
